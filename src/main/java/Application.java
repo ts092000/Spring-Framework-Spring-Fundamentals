@@ -10,7 +10,13 @@ public class Application {
 //        SpeakerService service = new SpeakerServiceImpl();
         SpeakerService service = appContext.getBean("speakerService", SpeakerService.class);
 
-        System.out.print(service.findAll().get(0).getFisrtName() + " ");
+        System.out.println(service);
+
+        System.out.println(service.findAll().get(0).getFisrtName() + " ");
+
+        SpeakerService service2 = appContext.getBean("speakerService", SpeakerService.class);
+
+        System.out.println(service2);
 //        System.out.print(service.findAll().get(0).getLastName());
 //
 //        System.out.println();
